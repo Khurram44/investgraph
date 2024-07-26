@@ -11,7 +11,7 @@ const LineChart = () => {
     theme: 'light1', // "light1", "dark1", "dark2"
     title: {
       text: '',
-    },
+    },   
     axisX: {
       title: '',
       interval: 1,
@@ -34,7 +34,7 @@ const LineChart = () => {
       }
     },
     axisY: {
-      title: '',
+      title: 'Change (%)',
       includeZero: true,
       gridThickness: 0, // Remove horizontal grid lines
       tickThickness: 0, // Optionally remove vertical tick marks
@@ -45,7 +45,7 @@ const LineChart = () => {
         name: 'Website traffic',
         showInLegend: true,
         color: '#FF5733', // Custom color
-        lineThickness: 3,
+        lineThickness: 4,
         lineDashType: 'solid', // Remove dashed lines
         dataPoints: [
           { x: 1, y: 3 },
@@ -67,7 +67,7 @@ const LineChart = () => {
         name: 'Brand engagement',
         showInLegend: true,
         color: '#33FF57', // Custom color
-        lineThickness: 3,
+        lineThickness: 4,
         lineDashType: 'solid', // Remove dashed lines
         dataPoints: [
           { x: 1, y: 5 },
@@ -89,7 +89,7 @@ const LineChart = () => {
         name: 'Time spent on website',
         showInLegend: true,
         color: '#3357FF', // Custom color
-        lineThickness: 3,
+        lineThickness: 4,
         lineDashType: 'solid', // Remove dashed lines
         dataPoints: [
           { x: 1, y: 10 },
@@ -111,7 +111,7 @@ const LineChart = () => {
         name: 'New leads generated',
         showInLegend: true,
         color: '#FF33A6', // Custom color
-        lineThickness: 3,
+        lineThickness: 4,
         lineDashType: 'solid', // Remove dashed lines
         dataPoints: [
           { x: 1, y: 0 },
