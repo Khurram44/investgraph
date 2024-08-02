@@ -1,10 +1,13 @@
 import React from 'react';
 import CanvasJSReact from '@canvasjs/react-charts';
+import { useMediaQuery } from '@mui/material';
 
 var CanvasJS = CanvasJSReact.CanvasJS;
 var CanvasJSChart = CanvasJSReact.CanvasJSChart;
 
 const LineChart = () => {
+  const isMobile = useMediaQuery('(min-width: 950px)');
+
   const options = {
     animationEnabled: true, // Enable animation
     animationDuration: 3000,
@@ -15,7 +18,7 @@ const LineChart = () => {
     axisX: {
       title: '',
       interval: 1,
-      labelAngle: -1,
+      labelAngle:isMobile ? -1 : -50, 
       labelFormatter: function (e) {
         // Custom label formatting
         return e.value === 1 ? "1 Month" :
